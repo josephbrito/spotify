@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon .ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Música para todos - Spotify</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo">
+			<img src="./images/logo.png" alt="logo-spotify" class="logo-img">
+			</div>
+			<nav class="nav-main">
+				<ul class="nav-list">
+					<li>Premium</li>
+					<li>Ajuda</li>
+					<li>Baixar</li>
+					<li>Inscrever-se</li>
+					<li>Entrar</li>
+				</ul>
+			</nav>
+			<div class="mobile-menu">
+				<i class="fas fa-ellipsis-v"></i>
+			</div>
+		</header>
+		<section class="sec">
+			<div class="title">
+				<h1>Música para todos.</h1>
+				<p>Milhões de música à sua escolha. E nem precisa de cartão de crédito.</p>
+				<button class="btn">OBTENHA O SPOTIFY-FREE</button>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer-content">
+			<div class="logo">
+				<img src="./images/logo.png" alt="" class="logo-img">
+			</div>
+			<div class="emprise">
+				<p class="about">EMPRESA</p>
+				<ul class="list">
+					<li>Sobre</li>
+					<li>Empregos</li>
+					<li>For the record</li>
+				</ul>
+			</div>
+
+			<div class="comunity">
+				<p class="about">COMUNIDADES</p>
+				<ul class="list">
+					<li>Para Artistas</li>
+					<li>Desenvolvedores</li>
+					<li>Marcas</li>
+					<li>Investidores</li>
+					<li>Fornecedores</li>
+				</ul>
+			</div>
+
+			<div class="links">
+				<p class="about">LINKS ÚTEIS</p>
+				<ul class="list">
+					<li>Ajuda</li>
+					<li>Player da Web</li>
+					<li>Aplicativo móvel grátis</li>
+				</ul>
+			</div>
+			</div>
+
+			<div class="copy">
+				<div class="more">
+					<ul class="more-list">
+						<li>Legal</li>
+						<li>Centro de Privacidade</li>
+						<li>Política de Privacidade</li>
+						<li>Cookies</li>
+						<li>Sobre anúncios</li>
+					</ul>
+					</div>
+
+					<div class="place">
+						<span class="brazil">Brasil</span>
+						<img src="./images/brazil.png" class="place-logo">
+						<p class="brazil">&copy; Spotify AB</p>
+					</div>
+				
+			</div>
+		</footer>
+	</div>
+	<script src="https://kit.fontawesome.com/a501ad0b84.js" crossorigin="anonymous"></script>
+	<script>
+		const menuclick = document.querySelector('.mobile-menu i');
+		const navclick = document.querySelector('.nav-main');
+
+		menuclick.addEventListener('click', ()=>{
+			menuclick.classList.toggle('active');
+
+			navclick.classList.toggle('nav-active');
+		})
+	</script>
+</body>
+</html>
